@@ -1,0 +1,10 @@
+
+# DELETE TABLES
+```sql
+DROP TABLE IF EXISTS season_stats;
+DROP TABLE IF EXISTS seasons;
+DROP TABLE IF EXISTS games;
+DROP TABLE IF EXISTS coaches;
+DROP TABLE IF EXISTS teams;
+DROP VIEW IF EXISTS player_points;
+```
