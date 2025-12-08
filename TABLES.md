@@ -1,6 +1,16 @@
 
 ## SQL Create Table Blocks
 
+# Teams table 
+```sql
+CREATE TABLE teams (
+    team_id INT(11) NOT NULL PRIMARY KEY,
+    school_name VARCHAR(255) DEFAULT NULL,
+    city VARCHAR(255) DEFAULT NULL,
+    state VARCHAR(255) DEFAULT NULL,
+    league VARCHAR(255) DEFAULT NULL
+);
+```
 # Coaches Table
 ```sql
 CREATE TABLE coaches (
@@ -18,16 +28,12 @@ CREATE TABLE coaches (
 CREATE TABLE games (
     game_id INT AUTO_INCREMENT PRIMARY KEY,
     game_date DATE,
-    
     home_team_id INT,
     away_team_id INT,
-    
     home_score INT,
     away_score INT,
-    
     location VARCHAR(100),
     game_type VARCHAR(50),
-    
     FOREIGN KEY (home_team_id) REFERENCES teams(team_id),
     FOREIGN KEY (away_team_id) REFERENCES teams(team_id)
 );
@@ -46,7 +52,6 @@ CREATE TABLE games (
     hometown VARCHAR(100) DEFAULT NULL,
     team_id INT(11) DEFAULT NULL,
     height_inches INT(11) DEFAULT NULL,
-    
     FOREIGN KEY (team_id) REFERENCES teams(team_id)
 );  
 ```
@@ -75,15 +80,5 @@ CREATE TABLE season_stats (
     FOREIGN KEY (player_id) REFERENCES players(player_id),
     FOREIGN KEY (team_id) REFERENCES teams(team_id),
     FOREIGN KEY (season_id) REFERENCES seasons(season_id)
-);
-```
-# Teams table 
-```sql
-CREATE TABLE teams (
-    team_id INT(11) NOT NULL PRIMARY KEY,
-    school_name VARCHAR(255) DEFAULT NULL,
-    city VARCHAR(255) DEFAULT NULL,
-    state VARCHAR(255) DEFAULT NULL,
-    league VARCHAR(255) DEFAULT NULL
 );
 ```
