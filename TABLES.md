@@ -1,5 +1,5 @@
 
-## SQL CREATE TABLE Blocks
+## SQL Create Table Blocks
 
 # Coaches Table
 ```sql
