@@ -56,25 +56,22 @@ CREATE TABLE seasons (
     season_id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
     season_year VARCHAR(20) UNIQUE DEFAULT NULL
 );
+```
 
 # Season stats Table 
 ```sql
 CREATE TABLE season_stats (
     stats_id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    
     player_id INT(11) NOT NULL,
     team_id INT(11) NOT NULL,
     season_id INT(11) NOT NULL,
-
     games_played INT(11) DEFAULT NULL,
     games_started INT(11) DEFAULT NULL,
-
     minutes_per_game DECIMAL(4,1) DEFAULT NULL,
     field_goal_pct DECIMAL(5,2) DEFAULT NULL,
     three_pt_pct DECIMAL(5,2) DEFAULT NULL,
     free_throw_pct DECIMAL(5,2) DEFAULT NULL,
     points_per_game DECIMAL(4,1) DEFAULT NULL,
-
     FOREIGN KEY (player_id) REFERENCES players(player_id),
     FOREIGN KEY (team_id) REFERENCES teams(team_id),
     FOREIGN KEY (season_id) REFERENCES seasons(season_id)
