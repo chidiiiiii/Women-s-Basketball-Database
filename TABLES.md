@@ -49,9 +49,9 @@ CREATE TABLE games (
     height VARCHAR(10) NOT NULL,
     position ENUM('G','F','C','G/F','F/C') NOT NULL,
     jersey_number INT(11) DEFAULT NULL,
-    hometown VARCHAR(100) DEFAULT NULL,
-    team_id INT(11) DEFAULT NULL,
-    height_inches INT(11) DEFAULT NULL,
+    hometown VARCHAR(100),
+    team_id INT(11),
+    height_inches INT(11),
     FOREIGN KEY (team_id) REFERENCES teams(team_id)
 );  
 ```
