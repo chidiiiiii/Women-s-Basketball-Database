@@ -1,4 +1,6 @@
 ## Fully normalized database
+- [RELATIONSHIP DIAGRAM](relationships.png)
+  
 The database is fully normalized to Third Normal Form (3NF). Each table stores one clear category of information with no repeating groups or unnecessary duplication. For example, players, teams, seasons, and games are all separated so that each entity has a single, reliable place where its information is kept. 
 This prevents problems like update anomalies—if a team changes conferences or a player changes teams, the update only happens in one table.
 
