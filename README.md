@@ -1,7 +1,5 @@
 # Huntington Womens Basketball Database
-The Huntington University Women’s Basketball Team is a college athletic program that competes in the Crossroads League of the NAIA. The team represents the university at both regional and national levels, focusing on strong athletic performance, academic success, and personal growth.
-
-The coaching staff works together to develop each player’s skills through regular practices, competitive games, and team-building activities. The program recruits student-athletes from many different areas and keeps detailed records of players, games, and season statistics to track progress and prepare for future competition.
+The Huntington University Women’s Basketball Team is a college athletic program that competes in the Crossroads League of the NAIA. The coaching staff works together to develop each player’s skills through regular practices, competitive games, and team-building activities. The program recruits student-athletes from many different areas and keeps detailed records of players, games, and season statistics to track progress and prepare for future competition.
 
 Currently, much of the team’s information—such as player rosters, game results, and individual performance statistics—is stored across multiple spreadsheets or tracked manually. This makes it difficult to quickly analyze data, monitor trends, or generate accurate reports for media releases and scouting purposes. By implementing a centralized relational database, the Huntington Women’s Basketball Team can efficiently manage all relevant data in one system. This ensures that coaches, staff, and athletic administrators have easy access to up-to-date information that supports better decision-making, performance tracking, and long-term player development.
 
