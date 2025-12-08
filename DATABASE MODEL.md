@@ -37,7 +37,7 @@ This allows reporting and comparisons over time.
 
 ## Season_stats
 
-Contains statistical averages for players for a specific season, such as points, minutes, and shooting percentages.
+Contains statistical averages for players for a specific season, such as minutes played, field goal percentages, and points per game. 
 Links the player, their team, and the season using foreign keys.
 This structure keeps all season performance data organized, accurate, and free of duplication.
 
